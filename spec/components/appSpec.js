@@ -36,7 +36,7 @@ describe('app', function() {
 
   it('should have a currentVideo property on the scope', function() {
     expect(element.isolateScope().$ctrl.currentVideo).to.exist;
-    expect(element.isolateScope().$ctrl.currentVideo).to.be.a('object');
+    expect(element.isolateScope().$ctrl.currentVideo).to.be.a('number');
   });
 
   it('should have a videos property on the scope', function() {
