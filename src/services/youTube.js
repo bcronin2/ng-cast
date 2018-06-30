@@ -7,7 +7,7 @@ angular.module('video-player')
         contentType: 'application/json',
         params: {
           q: query,
-          maxResults: 5,
+          orderBy: 'relevance',
           key: window.YOUTUBE_API_KEY,
           videoEmbeddable: 'true',
           type: 'video',
