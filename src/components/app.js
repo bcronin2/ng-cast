@@ -4,11 +4,10 @@ angular.module('video-player')
       this.videos = window.exampleVideoData;
       this.currentVideo = 0;
       this.searchService = youTube;
-
-      this.onClick = (index) => {
+      
+      this.selectVideo = (index) => {
         this.currentVideo = index;
       };
-      this.selectVideo = () => {};
       this.searchResults = (items) => {
         this.videos = items;
       };
