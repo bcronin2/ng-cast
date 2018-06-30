@@ -20,4 +20,5 @@ angular.module('video-player')
         console.log('failure', response);
       });
     };
+    this.debouncedSearch = _.debounce(this.search, 500);
   });
